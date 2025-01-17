@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const config = {
     darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -20,7 +20,7 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: '#FF6B6B',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
@@ -59,3 +59,5 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 };
+
+export default config;
